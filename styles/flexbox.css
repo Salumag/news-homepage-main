@@ -1,0 +1,28 @@
+/* selector universal: me permite seleccionar cualquier elemento y a cada uno le aplica las reglas de estilo que aqui pongamos sin importar el navegador */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /* formato de estilos */
+
+body {
+    font-family: system-ui; /* establecer el tipo de tipografia con respecto al sistema operativo que se este usando */
+
+}
+section {
+
+    width: 80%; /* para establecer que % se usa de la pantalla para mostrar la pagina */
+    margin: 0 auto; /* 0 arriba y abajo y a los lados automatico */
+    display: flex; /* solo se hace para elementos PADRE o CONTENEDORES y el valor por defecto es FILA*/
+    /* para poder usar todas las siguientes herramientas se debe abrir display flex o grid dependiendo de que vayamos a hacer*/
+    /* flex-direction:  se usa para cambiar de fila a columba y otras*/
+    /* flex-wrap: wrap; /* para que se organicen dependiendo del tamanio de la pantalla */
+    /* justify-content:center; /* para alinear el texto a la pantalla (izq centro o der o space between) */
+    gap: 2rem; /* 1 rem es igual a 16 pixeles y es el espaciado entre columnas*/
+
+}
+article{
+    border: 2px solid tomato; /* borde para poder visualizar las cajas */
+
+}
