@@ -1,60 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Frontend Mentor | News homepage</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="Style/main.css">
+
 </head>
 <body>
-
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+  <section class="contenedor">
+    <header class="row-flex">
+      <h1>
+        <img src="assets/images/logo.svg" alt="W logo">
+      </h1>
+      <nav class="menu">
+        <a href="#">Home</a> <!-- El # es para cuando no se tiene el link a donde debe llevar ese boton o enlace -->
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+      </nav>
+    </header>
+    <main class="row-grid col-2-1">
+      <article class="row-grid">
+        <picture>
+          <img class="image-desk" src="assets/images/image-web-3-desktop.jpg" alt="imagen principal">
+          <img class="image-mob" src="assets/images/image-web-3-mobile.jpg" alt="imagen mob">
+        </picture>
+        <section class="row-grid col-1-1">
+          <h2 class="title-xl">The Bright Future of Web 3.0?</h2>
+          <section>
+            <p class="mb-3">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <button class="boton-rojo">Read more</button>
+          </section>
+        </section>
+      </article>
+      <aside class="news">
+        <h3>NEWS</h3>
+        <section class="news-content">
+          <article>
+            <h4>Hydrogen VS Electric Cars</h4>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+          <hr>
+          <article>
+            <h4>The Downsides of AI Artistry</h4>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </article>
+          <hr>
+          <article>
+            <h4>Is VC Funding Drying Up?</h4>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </article>
+        </section>
+      </aside>
+    </main>
+    <section class="row-grid col-1-1-1 mt-2 tamaño-img50"> <!-- seccion final de la pagina -->
+      <article class="row-flex">
+        <img class="width80" src="assets/images/image-retro-pcs.jpg" alt="imagen pc viejita">
+        <section class="s-b">
+          <h2 class="letra-tr">01</h2>
+          <a class="stylo-a" href="#">Reviving Retro PCs</a>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </section>
+      </article>
+      <article class="row-flex">
+        <img src="assets/images/image-top-laptops.jpg" alt="imagen teclado">
+        <section class="s-b">
+          <h2 class="letra-tr">02</h2>
+          <a class="stylo-a" href="#">Top 10 Laptops of 2022</a>
+          <p> Our best picks for various needs and budgets.</p>
+        </section>
+      </article>
+      <article class="row-flex">
+        <img src="assets/images/image-gaming-growth.jpg" alt="imagen control">
+        <section class="s-b">
+          <h2 class="letra-tr">03</h2>
+          <a class="stylo-a" href="#">The Growth of Gaming</a>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </section>
+      </article>
+    </section>
+  </section>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Salvador Maldonado</a>.
   </div>
 </body>
 </html>
